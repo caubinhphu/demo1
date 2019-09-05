@@ -1,5 +1,6 @@
-function Cat(name){
+function Cat(name, weight){
 	this.name = name;
+	this.weight = weight;
 	this.stomach = [];
 }
 
