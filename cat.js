@@ -6,7 +6,7 @@ function Cat(name){
 Cat.prototype.call = () => console.log('Meo meo');
 Cat.prototype.eat = function(mouse) {
 	this.stomach.push(mouse);
-	mouse.dead = true;
+	mouse.die();
 };
 
 module.exports = Cat;
