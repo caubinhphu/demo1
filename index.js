@@ -22,3 +22,4 @@ try {
 } catch (err) {
 	console.log('Cat cannot eat!');
 }
+console.log(cat);
