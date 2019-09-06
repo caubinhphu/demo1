@@ -1,3 +1,5 @@
+var Mouse = require('./Mouse');
+
 function Cat(name, weight){
 	this.name = name;
 	this.weight = weight;
@@ -5,9 +7,13 @@ function Cat(name, weight){
 }
 
 Cat.prototype.call = () => 'Meo meo';
-Cat.prototype.eat = function(mouse) {
-	this.stomach.push(mouse);
-	mouse.die();
+Cat.prototype.eat = function(animal) {
+	if (animal instanceof Mouse) {
+		this.stomach.push(mouse);
+		mouse.die();
+	} else {
+		throw new Error('Cat only eat mouse');
+	}
 };
 
 module.exports = Cat;
