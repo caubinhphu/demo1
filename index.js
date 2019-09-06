@@ -11,3 +11,4 @@ cat.eat(mouse);
 
 console.log(cat);
 console.log(chalk.red(dog.call()));
+console.log(chalk.blue(cat.call()));
