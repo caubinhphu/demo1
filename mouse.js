@@ -5,7 +5,11 @@ function Mouse(name) {
 
 Mouse.prototype.die = function() {
 	this.dead = true;
-}
+};
+
+Mouse.prototype.sleep = function(){
+	console.log('Sleeping....');
+};
 
 Mouse.prototype.run = function(){
 	console.log('Running....');
